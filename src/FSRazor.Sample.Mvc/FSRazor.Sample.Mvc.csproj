@@ -81,6 +81,19 @@
   <ItemGroup>
     <Content Include="Views\Home\Index.cshtml" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\FSRazor.Mvc\FSRazor.Mvc.fsproj">
+      <Project>{8B35B582-DA09-45D0-82BD-85AA1B5266AF}</Project>
+      <Name>FSRazor.Mvc</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FSRazor\FSRazor.fsproj">
+      <Project>{6CC14B81-8E91-48F9-A616-0AA952757A23}</Project>
+      <Name>FSRazor</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Views\Home\Test.fshtml" />
+  </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

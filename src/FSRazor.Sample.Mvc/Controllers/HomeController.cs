@@ -9,5 +9,10 @@ namespace FSRazor.Sample.Mvc.Controllers
             ViewBag.Message = "Welcome to FSRazor";
             return View();
         }
+
+        public ActionResult Test()
+        {
+            return View();
+        }
     }
 }
