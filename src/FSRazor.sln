@@ -1,6 +1,8 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FSRazor.Sample.Mvc", "FSRazor.Sample.Mvc\FSRazor.Sample.Mvc.csproj", "{184DE8A1-FECC-4176-B617-DE3AD3D7D128}"
+EndProject
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "FSRazor", "FSRazor\FSRazor.fsproj", "{6CC14B81-8E91-48F9-A616-0AA952757A23}"
 EndProject
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "FSRazor.Mvc", "FSRazor.Mvc\FSRazor.Mvc.fsproj", "{8B35B582-DA09-45D0-82BD-85AA1B5266AF}"
@@ -11,6 +13,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{184DE8A1-FECC-4176-B617-DE3AD3D7D128}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{184DE8A1-FECC-4176-B617-DE3AD3D7D128}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{184DE8A1-FECC-4176-B617-DE3AD3D7D128}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{184DE8A1-FECC-4176-B617-DE3AD3D7D128}.Release|Any CPU.Build.0 = Release|Any CPU
 		{6CC14B81-8E91-48F9-A616-0AA952757A23}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{6CC14B81-8E91-48F9-A616-0AA952757A23}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6CC14B81-8E91-48F9-A616-0AA952757A23}.Release|Any CPU.ActiveCfg = Release|Any CPU
