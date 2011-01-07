@@ -6,44 +6,67 @@ open System.Web.Razor.Generator
 type FSharpCodeWriter() =
     inherit CodeWriter()
 
+    member private x.Write (s : string) =
+        base.InnerWriter.Write(s)
+
+    member private x.WriteLine () =
+        base.InnerWriter.WriteLine()
+
     override x.EmitStartConstructor(typeName) =
-        raise <| new System.NotImplementedException()
+        x.Write "new "
+        x.Write typeName
+        x.Write "("
 
     override x.EmitEndConstructor() =
-        raise <| new System.NotImplementedException()
+        x.Write ")"
 
     override x.EmitStartLambdaDelegate(parameterNames) =
-        raise <| new System.NotImplementedException()
+        x.EmitStartLambdaExpression parameterNames
+        x.WriteLine()
 
     override x.EmitEndLambdaDelegate() =
-        raise <| new System.NotImplementedException()
+        x.WriteLine()
 
     override x.EmitStartLambdaExpression(parameterNames) =
-        raise <| new System.NotImplementedException()
+        x.Write "(fun "
+        match parameterNames.Length with
+        | 0 -> x.Write "() "
+        | _ -> parameterNames |> Array.iter (fun n -> x.Write n; x.Write " ")
+        x.Write "-> "
 
     override x.EmitEndLambdaExpression() =
-        raise <| new System.NotImplementedException()
+        x.Write ")"
 
     override x.EmitStartMethodInvoke(methodName) =
-        raise <| new System.NotImplementedException()
+        x.Write "this."
+        x.Write methodName
+        x.Write "("
 
     override x.EmitEndMethodInvoke() =
-        raise <| new System.NotImplementedException()
+        x.Write ")"
 
     override x.WriteHelperHeaderPrefix(templateTypeName, isStatic) =
         raise <| new System.NotImplementedException()
 
     override x.WriteLinePragma(lineNumber, fileName) =
-        raise <| new System.NotImplementedException()
+        if lineNumber.HasValue then
+            x.WriteLine()
+            x.Write "# "
+            x.Write (lineNumber.Value.ToString())
+            x.Write " \""
+            x.Write fileName
+            x.Write "\""
 
     override x.WriteParameterSeparator() =
-        raise <| new System.NotImplementedException()
+        x.Write ", "
 
     override x.WriteReturn() =
-        raise <| new System.NotImplementedException()
+        x.WriteLine()
 
     override x.WriteSnippet(snippet) =
-        raise <| new System.NotImplementedException()
+        x.Write snippet
 
     override x.WriteStringLiteral(literal) =
-        raise <| new System.NotImplementedException()
+        x.Write "@\""
+        x.Write <| literal.Replace("\"", "\"\"")
+        x.Write "\""
