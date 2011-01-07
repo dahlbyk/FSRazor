@@ -52,6 +52,7 @@
     <Compile Include="MvcFSharpCodeParser.fs" />
     <Compile Include="MvcFSharpRazorCodeGenerator.fs" />
     <Compile Include="MvcWebPageRazorHost.fs" />
+    <Compile Include="AssemblyInfo.fs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\FSRazor\FSRazor.fsproj">
