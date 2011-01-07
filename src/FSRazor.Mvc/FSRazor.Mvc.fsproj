@@ -38,6 +38,7 @@
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Numerics" />
+    <Reference Include="System.Web" />
     <Reference Include="System.Web.Mvc">
       <HintPath>..\..\lib\ASP.NET MVC\v3\System.Web.Mvc.dll</HintPath>
     </Reference>
@@ -53,6 +54,7 @@
     <Compile Include="MvcFSharpRazorCodeGenerator.fs" />
     <Compile Include="MvcWebPageRazorHost.fs" />
     <Compile Include="FSRazorViewEngine.fs" />
+    <Compile Include="PreApplicationStartCode.fs" />
     <Compile Include="AssemblyInfo.fs" />
   </ItemGroup>
   <ItemGroup>

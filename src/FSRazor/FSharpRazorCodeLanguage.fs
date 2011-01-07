@@ -7,7 +7,7 @@ open System.Web.Razor.Parser
 type FSharpRazorCodeLanguage() =
     inherit RazorCodeLanguage()
 
-    static do
+    static member Install() =
         RazorCodeLanguage.Languages.Add("fshtml", new FSharpRazorCodeLanguage())
 
     override x.LanguageName
