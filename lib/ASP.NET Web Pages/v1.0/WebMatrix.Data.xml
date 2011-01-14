@@ -8,64 +8,68 @@
     <member name="M:WebMatrix.Data.ConnectionEventArgs.#ctor(System.Data.Common.DbConnection)"></member>
     <member name="P:WebMatrix.Data.ConnectionEventArgs.Connection"></member>
     <member name="T:WebMatrix.Data.Database">
-      <summary>Represents an open database.</summary>
+      <summary>Provides methods and properties that are used to access and manage data.</summary>
     </member>
     <member name="M:WebMatrix.Data.Database.Close">
-      <summary>Closes the open database.</summary>
+      <summary>Closes an open database.</summary>
     </member>
     <member name="P:WebMatrix.Data.Database.Connection">
-      <summary>Gets a connection to a database.</summary>
-      <returns>Returns <see cref="T:System.Data.Common.DbConnection" />.</returns>
+      <summary>Gets the current connection to a database.</summary>
+      <returns>The connection.</returns>
     </member>
     <member name="E:WebMatrix.Data.Database.ConnectionOpened">
-      <summary>Occurs when a new database connection is opened by a <see cref="T:WebMatrix.Data.Database" /> instance. </summary>
+      <summary>Occurs when a new database connection is opened by a <see cref="T:WebMatrix.Data.Database" /> instance.</summary>
     </member>
     <member name="M:WebMatrix.Data.Database.Dispose">
-      <summary>Releases all resources used by the <see cref="T:WebMatrix.Data.Database" />.</summary>
+      <summary>Releases all resources used by a <see cref="T:WebMatrix.Data.Database" /> instance.</summary>
     </member>
     <member name="M:WebMatrix.Data.Database.Dispose(System.Boolean)">
-      <summary>Releases the unmanaged resources used by the <see cref="T:WebMatrix.Data.Database" /> and optionally releases the managed resources.</summary>
+      <summary>Releases the unmanaged resources used by a <see cref="T:WebMatrix.Data.Database" /> instance and optionally releases the managed resources.</summary>
       <param name="disposing">true to release both managed and unmanaged resources; false to release only unmanaged resources.</param>
     </member>
     <member name="M:WebMatrix.Data.Database.Execute(System.String,System.Object[])">
-      <summary>Executes an SQL statement (with optional parameters) such as INSERT, DELETE, or UPDATE and returns a count of affected records..</summary>
-      <returns>Returns <see cref="T:System.Int32" />.</returns>
-      <param name="commandText">A SQL statement.</param>
-      <param name="args">(Optional) The parameters used to pass values into the SQL statement.</param>
+      <summary>Executes a SQL statement using optional parameters.</summary>
+      <returns>The count of records affected by the SQL statement.</returns>
+      <param name="commandText">The SQL statement to execute.</param>
+      <param name="args">(Optional) Parameters to pass to the SQL statement.</param>
     </member>
     <member name="M:WebMatrix.Data.Database.GetLastInsertId">
-      <summary>Returns the identity column from the most recently inserted row.</summary>
-      <returns>Returns <see cref="T:System.Object" />.</returns>
+      <summary>Returns the identity column of the most recently inserted row.</summary>
+      <returns>The ID of the most recently inserted row.</returns>
     </member>
     <member name="M:WebMatrix.Data.Database.Open(System.String)">
-      <summary>Opens either the specified database file or the database specified using a named connection string from the Web.config file.</summary>
-      <returns>Returns <see cref="T:WebMatrix.Data.Database" />.</returns>
+      <summary>Opens either the specified database file or the database that is specified using a named connection string from the Web.config file.</summary>
+      <returns>The database instance.</returns>
       <param name="name">The name or connection string of the database.</param>
     </member>
-    <member name="M:WebMatrix.Data.Database.OpenConnectionString(System.String)"></member>
+    <member name="M:WebMatrix.Data.Database.OpenConnectionString(System.String)">
+      <summary>Opens a connection to a database using the specified connection string.</summary>
+      <returns>The database instance.</returns>
+      <param name="connectionString">The connection string that contains information that is used to connect to a database.</param>
+    </member>
     <member name="M:WebMatrix.Data.Database.OpenConnectionString(System.String,System.String)">
-      <summary>Opens a database using a connection string.</summary>
-      <returns>Returns <see cref="T:WebMatrix.Data.Database" />.</returns>
-      <param name="connectionString">Information about how to connect to a database.</param>
-      <param name="providerName">(Optional) The name of the .NET Framework data provider that is used to connect to the data source.</param>
+      <summary>Opens a database using a connection string and the specified provider.</summary>
+      <returns>The database instance.</returns>
+      <param name="connectionString">The connection string that contains information that is used to connect to a database.</param>
+      <param name="providerName">(Optional) The name of the .NET Framework data provider to use to connect to the data source.</param>
     </member>
     <member name="M:WebMatrix.Data.Database.Query(System.String,System.Object[])">
-      <summary>Queries the database using a SQL statement (optionally passing parameters) and returns the results in result. </summary>
-      <returns>Returns <see cref="T:System.Collections.Generic.IEnumerable`1" />.</returns>
-      <param name="commandText">Represents a SQL statement to execute against the data source.</param>
-      <param name="parameters">(Optional) The parameters used to pass values into the SQL statement.</param>
+      <summary>Queries the database using a SQL statement (optionally passing parameters) and returns the results. </summary>
+      <returns>The results of the query.</returns>
+      <param name="commandText">The SQL statement to execute.</param>
+      <param name="parameters">(Optional) Parameters to pass to the SQL statement.</param>
     </member>
     <member name="M:WebMatrix.Data.Database.QuerySingle(System.String,System.Object[])">
-      <summary>Executes a SQL statement (with optional parameters) and returns a single record.</summary>
-      <returns>Returns <see cref="T:System.Object" />.</returns>
-      <param name="commandText">Represents a SQL statement to execute against the data source.</param>
-      <param name="args">(Optional) The parameters used to pass values into the SQL statement.</param>
+      <summary>Executes a SQL statement (optionally passing parameters) and returns a single record.</summary>
+      <returns>The single database record returned by the SQL statement.</returns>
+      <param name="commandText">The SQL statement to execute.</param>
+      <param name="args">(Optional) Parameters to pass to the SQL statement.</param>
     </member>
     <member name="M:WebMatrix.Data.Database.QueryValue(System.String,System.Object[])">
-      <summary>Executes a SQL statement (with optional parameters) and returns a single value.</summary>
-      <returns>Returns <see cref="T:System.Object" />.</returns>
-      <param name="commandText">Represents a SQL statement to execute against the data source.</param>
-      <param name="args">(Optional) The parameters used to pass values into the SQL statement.</param>
+      <summary>Executes a SQL statement (optionally passing parameters) and returns a single (scalar) value.</summary>
+      <returns>The value returned by the SQL statement.</returns>
+      <param name="commandText">The  SQL statement to execute.</param>
+      <param name="args">(Optional) Parameters to pass to the SQL statement.</param>
     </member>
     <member name="T:WebMatrix.Data.DynamicRecord"></member>
     <member name="P:WebMatrix.Data.DynamicRecord.Columns"></member>
