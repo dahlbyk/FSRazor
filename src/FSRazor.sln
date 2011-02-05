@@ -9,6 +9,8 @@ Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "FSRazor", "FSRazor\FSRazor.
 EndProject
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "FSRazor.Mvc", "FSRazor.Mvc\FSRazor.Mvc.fsproj", "{8B35B582-DA09-45D0-82BD-85AA1B5266AF}"
 EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "FSRazor.WebPages", "FSRazor.WebPages\FSRazor.WebPages.fsproj", "{B2FC3A34-B8BF-4F19-9841-8C2DDB05376B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{8B35B582-DA09-45D0-82BD-85AA1B5266AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8B35B582-DA09-45D0-82BD-85AA1B5266AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8B35B582-DA09-45D0-82BD-85AA1B5266AF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B2FC3A34-B8BF-4F19-9841-8C2DDB05376B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B2FC3A34-B8BF-4F19-9841-8C2DDB05376B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B2FC3A34-B8BF-4F19-9841-8C2DDB05376B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B2FC3A34-B8BF-4F19-9841-8C2DDB05376B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
