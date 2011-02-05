@@ -1,6 +1,8 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Samples", "Samples", "{204DF63B-C74F-4A2D-9BBF-E190168B5E34}"
+EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FSRazor.Sample.Mvc", "FSRazor.Sample.Mvc\FSRazor.Sample.Mvc.csproj", "{184DE8A1-FECC-4176-B617-DE3AD3D7D128}"
 EndProject
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "FSRazor", "FSRazor\FSRazor.fsproj", "{6CC14B81-8E91-48F9-A616-0AA952757A23}"
@@ -28,5 +30,8 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{184DE8A1-FECC-4176-B617-DE3AD3D7D128} = {204DF63B-C74F-4A2D-9BBF-E190168B5E34}
 	EndGlobalSection
 EndGlobal
