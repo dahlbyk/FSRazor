@@ -1,4 +1,4 @@
-﻿namespace FSRazor
+﻿namespace FSRazor.Mvc
 
 open Microsoft.FSharp.Collections
 open System.Web.Mvc

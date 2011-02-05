@@ -1,8 +1,10 @@
-﻿namespace FSRazor.Mvc
+﻿namespace FSRazor
 
+open FSRazor
 open System
+open System.Web.Compilation
 open System.ComponentModel
-open System.Web.Mvc
+open System.Web.WebPages.Razor
 
 [<EditorBrowsable(EditorBrowsableState.Never)>]
 type PreApplicationStartCode() =
@@ -12,6 +14,5 @@ type PreApplicationStartCode() =
         if (not startWasCalled) then
             startWasCalled <- true
 
-            FSRazor.PreApplicationStartCode.Start()
-
-            ViewEngines.Engines.Add(new FSRazorViewEngine());
+            BuildProvider.RegisterBuildProvider(".fshtml", typeof<RazorBuildProvider>)
+            FSharpRazorCodeLanguage.Install();
