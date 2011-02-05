@@ -39,7 +39,6 @@
     <Reference Include="FSharp.Core" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
-    <Reference Include="System.Numerics" />
     <Reference Include="System.Web" />
     <Reference Include="System.Web.Razor">
       <HintPath>..\..\lib\ASP.NET Web Pages\v1.0\System.Web.Razor.dll</HintPath>
