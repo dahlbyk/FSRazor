@@ -1,0 +1,18 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>FSRazor.WebPages</title>
+    </head>
+    <body>
+    <h2>@("FSRazor" + ".WebPages")</h2>
+    <p>@(
+        let even_odd s =
+            match s % 2 with
+            | 0 -> sprintf "%i is even!" s
+            | _ -> sprintf "%i is odd!" s
+        DateTime.Now.Second |> even_odd
+        )</p>
+    </body>
+</html>

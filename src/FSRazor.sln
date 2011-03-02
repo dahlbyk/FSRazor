@@ -5,6 +5,27 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Samples", "Samples", "{204D
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FSRazor.Sample.Mvc", "FSRazor.Sample.Mvc\FSRazor.Sample.Mvc.csproj", "{184DE8A1-FECC-4176-B617-DE3AD3D7D128}"
 EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "FSRazor.Sample.WebPages", "FSRazor.Sample.WebPages\", "{6668120F-9656-4802-883A-49A2F04BDCBD}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
+		ProjectReferences = "{6CC14B81-8E91-48F9-A616-0AA952757A23}|FSRazor.dll;{B2FC3A34-B8BF-4F19-9841-8C2DDB05376B}|FSRazor.WebPages.dll;"
+		Debug.AspNetCompiler.VirtualPath = "/FSRazor.Sample.WebPages"
+		Debug.AspNetCompiler.PhysicalPath = "FSRazor.Sample.WebPages\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\FSRazor.Sample.WebPages\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/FSRazor.Sample.WebPages"
+		Release.AspNetCompiler.PhysicalPath = "FSRazor.Sample.WebPages\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\FSRazor.Sample.WebPages\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "4071"
+	EndProjectSection
+EndProject
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "FSRazor", "FSRazor\FSRazor.fsproj", "{6CC14B81-8E91-48F9-A616-0AA952757A23}"
 EndProject
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "FSRazor.Mvc", "FSRazor.Mvc\FSRazor.Mvc.fsproj", "{8B35B582-DA09-45D0-82BD-85AA1B5266AF}"
@@ -21,6 +42,10 @@ Global
 		{184DE8A1-FECC-4176-B617-DE3AD3D7D128}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{184DE8A1-FECC-4176-B617-DE3AD3D7D128}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{184DE8A1-FECC-4176-B617-DE3AD3D7D128}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6668120F-9656-4802-883A-49A2F04BDCBD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6668120F-9656-4802-883A-49A2F04BDCBD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6668120F-9656-4802-883A-49A2F04BDCBD}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{6668120F-9656-4802-883A-49A2F04BDCBD}.Release|Any CPU.Build.0 = Debug|Any CPU
 		{6CC14B81-8E91-48F9-A616-0AA952757A23}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{6CC14B81-8E91-48F9-A616-0AA952757A23}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6CC14B81-8E91-48F9-A616-0AA952757A23}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -39,5 +64,6 @@ Global
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{184DE8A1-FECC-4176-B617-DE3AD3D7D128} = {204DF63B-C74F-4A2D-9BBF-E190168B5E34}
+		{6668120F-9656-4802-883A-49A2F04BDCBD} = {204DF63B-C74F-4A2D-9BBF-E190168B5E34}
 	EndGlobalSection
 EndGlobal
