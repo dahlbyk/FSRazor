@@ -40,6 +40,9 @@
     <Reference Include="System.Web.WebPages">
       <HintPath>..\..\lib\ASP.NET Web Pages\v1.0\System.Web.WebPages.dll</HintPath>
     </Reference>
+    <Reference Include="System.Web.WebPages.Deployment">
+      <HintPath>..\..\lib\ASP.NET Web Pages\v1.0\System.Web.WebPages.Deployment.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="PreApplicationStartCode.fs" />
