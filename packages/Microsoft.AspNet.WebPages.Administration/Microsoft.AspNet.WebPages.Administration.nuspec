@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <version>1.0.20105.408</version>
+    <authors>Microsoft</authors>
+    <owners>Microsoft</owners>
+    <licenseUrl>http://www.microsoft.com/web/webpi/eula/aspnetwebpages_eula.rtf</licenseUrl>
+    <projectUrl>http://www.asp.net/web-pages</projectUrl>
+    <dependencies>
+      <dependency id="NuGet.Core" version="1.0.1120.104" />
+      <dependency id="Microsoft.AspNet.WebPages" version="1.0.20105.408" />
+    </dependencies>
+    <id>Microsoft.AspNet.WebPages.Administration</id>
+    <title>Microsoft ASP.NET Web Pages Administration</title>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <description>This package contains the runtime assemblies for ASP.NET Web Pages. ASP.NET Web Pages and the new Razor syntax provide a fast, terse, clean and lightweight way to combine server code with HTML to create dynamic web content.</description>
+    <language>en-US</language>
+  </metadata>
+</package>

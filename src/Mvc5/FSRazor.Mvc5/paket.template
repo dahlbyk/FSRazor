@@ -1,0 +1,23 @@
+type project
+owners
+    Author not set
+authors 
+    Author not set
+projectUrl
+    http://github.com/dahlbyk/FSRazor
+iconUrl
+    https://raw.githubusercontent.com/dahlbyk/FSRazor/master/docs/files/img/logo.png
+licenseUrl
+    http://github.com/dahlbyk/FSRazor/blob/master/LICENSE.txt
+requireLicenseAcceptance
+    false
+copyright
+    Copyright 2015
+tags
+    razor fsharp F# aspnet mvc templating
+summary
+    F# Parser and Code Generator for Razor View Engine
+description
+    F# Parser and Code Generator for Razor View Engine
+
+

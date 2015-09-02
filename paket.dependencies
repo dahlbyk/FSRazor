@@ -1,0 +1,20 @@
+source https://nuget.org/api/v2
+
+nuget FSharp.Formatting
+nuget NUnit 
+nuget NUnit.Runners
+nuget FAKE
+nuget SourceLink.Fake
+
+github fsharp/FAKE modules/Octokit/Octokit.fsx
+
+# MVC3
+nuget Microsoft.AspNet.Mvc                       ~> 3.0
+nuget Microsoft.AspNet.WebPages	                 ~> 1.0
+nuget Microsoft.Web.Infrastructure               ~> 1.0
+## may be incompatible with System.Web.Razor
+nuget System.Web.Razor.Unofficial                ~> 2.0
+nuget Microsoft.AspNet.Webpages.Administration   ~> 1.0         
+nuget Webmatrix.Data                             ~> 1.0
+nuget Webmatrix.WebData                          ~> 1.0
+nuget AspNetRazor.Core                           ~> 1.0
