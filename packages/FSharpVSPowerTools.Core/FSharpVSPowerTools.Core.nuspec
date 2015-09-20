@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>FSharpVSPowerTools.Core</id>
+    <version>1.8.0</version>
+    <authors>Anh-Dung Phan, Vasily Kirichenko, Denis Ok</authors>
+    <owners>Anh-Dung Phan, Vasily Kirichenko, Denis Ok</owners>
+    <licenseUrl>https://github.com/fsprojects/VisualFSharpPowerTools/blob/master/LICENSE.txt</licenseUrl>
+    <projectUrl>https://github.com/fsprojects/VisualFSharpPowerTools</projectUrl>
+    <iconUrl>https://raw.github.com/fsprojects/VisualFSharpPowerTools/master/docs/files/img/logo.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>The core project of Visual F# Power Tools includes IDE-agnostic features intended to be used in different F# IDEs and editors.</description>
+    <summary>A collection of additional commands for F# in Visual Studio</summary>
+    <releaseNotes>Support operator coloring ([#936](https://github.com/fsprojects/VisualFSharpPowerTools/issues/936))
+Implement Navigate to Source ([#945](https://github.com/fsprojects/VisualFSharpPowerTools/issues/945))
+Implement assembly resolution for FsiReferenceCommand ([#949](https://github.com/fsprojects/VisualFSharpPowerTools/pull/949))
+Fix missing colors in VS 2012 ([#952](https://github.com/fsprojects/VisualFSharpPowerTools/pull/952))
+No longer report synthetic range symbols ([#954](https://github.com/fsprojects/VisualFSharpPowerTools/pull/954))
+Generate signatures of enclosing modules of active patterns ([#955](https://github.com/fsprojects/VisualFSharpPowerTools/pull/955))</releaseNotes>
+    <language>en-US</language>
+    <tags>F# fsharp formatting editing highlighting navigation refactoring</tags>
+    <dependencies>
+      <dependency id="FSharp.Compiler.Service" version="0.0.87" />
+    </dependencies>
+  </metadata>
+</package>

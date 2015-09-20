@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <version>1.0.20105.408</version>
+    <authors>Microsoft</authors>
+    <owners>Microsoft</owners>
+    <projectUrl>http://www.asp.net/web-pages</projectUrl>
+    <dependencies>
+      <dependency id="Microsoft.AspNet.Razor" version="1.0.20105.408" />
+    </dependencies>
+    <id>AspNetRazor.Core</id>
+    <title>ASP.NET Web Pages Core Razor Libraries</title>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Legacy package, AspNetRazor.Core is now included in the 'Microsoft.AspNet.Razor' package.</description>
+    <summary>Legacy package, AspNetRazor.Core is now included in the 'Microsoft.AspNet.Razor' package.</summary>
+    <language>en-US</language>
+  </metadata>
+</package>

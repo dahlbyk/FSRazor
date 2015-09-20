@@ -1,0 +1,161 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".paket", ".paket", "{63297B98-5CED-492C-A5B7-A5B4F73CF142}"
+	ProjectSection(SolutionItems) = preProject
+		paket.dependencies = paket.dependencies
+		paket.lock = paket.lock
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "docs", "docs", "{A6A6AF7D-D6E3-442D-9B1E-58CC91879BE1}"
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "FSRazor.Mvc3", "src\Mvc3\FSRazor.Mvc3\FSRazor.Mvc3.fsproj", "{EB6F733B-A9FC-4A36-A127-EFA7CF26A48F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "project", "project", "{BF60BC93-E09B-4E5F-9D85-95A519479D54}"
+	ProjectSection(SolutionItems) = preProject
+		build.fsx = build.fsx
+		README.md = README.md
+		RELEASE_NOTES.md = RELEASE_NOTES.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tools", "tools", "{83F16175-43B1-4C90-A1EE-8E351C33435D}"
+	ProjectSection(SolutionItems) = preProject
+		docs\tools\generate.fsx = docs\tools\generate.fsx
+		docs\tools\templates\template.cshtml = docs\tools\templates\template.cshtml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "content", "content", "{8E6D5255-776D-4B61-85F9-73C37AA1FB9A}"
+	ProjectSection(SolutionItems) = preProject
+		docs\content\index.fsx = docs\content\index.fsx
+		docs\content\tutorial.fsx = docs\content\tutorial.fsx
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{ED8079DD-2B06-4030-9F0F-DC548F98E1C4}"
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "FSRazor.Mvc3.Tests", "tests\FSRazor.Mvc3.Tests\FSRazor.Mvc3.Tests.fsproj", "{57F64E13-05F2-4172-98E3-4E554EAAB2A0}"
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "FSRazor.Mvc4", "src\Mvc4\FSRazor.Mvc4\FSRazor.Mvc4.fsproj", "{EF3125D9-12FF-4B32-B743-32C5893C91F4}"
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "FSRazor.Mvc5", "src\Mvc5\FSRazor.Mvc5\FSRazor.Mvc5.fsproj", "{783ACD3A-486E-42D2-92A0-59D59854DE98}"
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "FSRazor.Mvc4.Tests", "tests\FSRazor.Mvc4.Tests\FSRazor.Mvc4.Tests.fsproj", "{B2B1BDFA-3AC9-4A81-914E-0FDBDD9C7141}"
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "FSRazor.Mvc5.Tests", "tests\FSRazor.Mvc5.Tests\FSRazor.Mvc5.Tests.fsproj", "{B79F013E-FC02-4BE5-BEE4-F6465A4346D7}"
+	ProjectSection(ProjectDependencies) = postProject
+		{783ACD3A-486E-42D2-92A0-59D59854DE98} = {783ACD3A-486E-42D2-92A0-59D59854DE98}
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{FF444E87-2BB2-4301-9CEA-089BADD078D4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Mvc3", "Mvc3", "{1F9403E8-D545-46A5-B23C-71D6AF0CF652}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Mvc4", "Mvc4", "{1A89EE18-9B68-4E68-B4A8-B10180A6D1EB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Mvc5", "Mvc5", "{503CD212-FC5B-44BA-85B8-466FCBC382F2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "samples", "samples", "{B39432BA-A3EA-4271-B2E4-1D0CAE43BCC4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FSRazor.Mvc3.Sample.Mvc", "src\Mvc3\Samples\FSRazor.Sample.Mvc\FSRazor.Mvc3.Sample.Mvc.csproj", "{184DE8A1-FECC-4176-B617-DE3AD3D7D128}"
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "FSRazor.Sample.WebPages", "src\Mvc3\Samples\FSRazor.Sample.WebPages\", "{7E3EA553-9CC3-4AE5-93D4-1F3ED2C2FE68}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_49420"
+		Debug.AspNetCompiler.PhysicalPath = "src\Mvc3\Samples\FSRazor.Sample.WebPages\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_49420\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_49420"
+		Release.AspNetCompiler.PhysicalPath = "src\Mvc3\Samples\FSRazor.Sample.WebPages\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_49420\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "49420"
+		SlnRelativePath = "src\Mvc3\Samples\FSRazor.Sample.WebPages\"
+	EndProjectSection
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "FSRazor.Mvc3.Mvc", "src\Mvc3\FSRazor.Mvc3.Mvc\FSRazor.Mvc3.Mvc.fsproj", "{6C89CDE1-FAF3-457D-A3ED-C3FD87382664}"
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "FSRazor.Mvc3.WebPages", "src\Mvc3\FSRazor.Mvc3.WebPages\FSRazor.Mvc3.WebPages.fsproj", "{12AF5107-5FFE-4BEA-8418-367C2276197F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "samples", "samples", "{90F0666D-BA7D-42A3-B585-BCDF0AF21E00}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "samples", "samples", "{9F962604-F7B4-49A9-A754-2CE2DB0A3CBC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EB6F733B-A9FC-4A36-A127-EFA7CF26A48F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EB6F733B-A9FC-4A36-A127-EFA7CF26A48F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EB6F733B-A9FC-4A36-A127-EFA7CF26A48F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EB6F733B-A9FC-4A36-A127-EFA7CF26A48F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{57F64E13-05F2-4172-98E3-4E554EAAB2A0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{57F64E13-05F2-4172-98E3-4E554EAAB2A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{57F64E13-05F2-4172-98E3-4E554EAAB2A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{57F64E13-05F2-4172-98E3-4E554EAAB2A0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EF3125D9-12FF-4B32-B743-32C5893C91F4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EF3125D9-12FF-4B32-B743-32C5893C91F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EF3125D9-12FF-4B32-B743-32C5893C91F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EF3125D9-12FF-4B32-B743-32C5893C91F4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{783ACD3A-486E-42D2-92A0-59D59854DE98}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{783ACD3A-486E-42D2-92A0-59D59854DE98}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{783ACD3A-486E-42D2-92A0-59D59854DE98}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{783ACD3A-486E-42D2-92A0-59D59854DE98}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B2B1BDFA-3AC9-4A81-914E-0FDBDD9C7141}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B2B1BDFA-3AC9-4A81-914E-0FDBDD9C7141}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B2B1BDFA-3AC9-4A81-914E-0FDBDD9C7141}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B2B1BDFA-3AC9-4A81-914E-0FDBDD9C7141}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B79F013E-FC02-4BE5-BEE4-F6465A4346D7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B79F013E-FC02-4BE5-BEE4-F6465A4346D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B79F013E-FC02-4BE5-BEE4-F6465A4346D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B79F013E-FC02-4BE5-BEE4-F6465A4346D7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{184DE8A1-FECC-4176-B617-DE3AD3D7D128}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{184DE8A1-FECC-4176-B617-DE3AD3D7D128}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{184DE8A1-FECC-4176-B617-DE3AD3D7D128}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{184DE8A1-FECC-4176-B617-DE3AD3D7D128}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7E3EA553-9CC3-4AE5-93D4-1F3ED2C2FE68}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7E3EA553-9CC3-4AE5-93D4-1F3ED2C2FE68}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7E3EA553-9CC3-4AE5-93D4-1F3ED2C2FE68}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{7E3EA553-9CC3-4AE5-93D4-1F3ED2C2FE68}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{6C89CDE1-FAF3-457D-A3ED-C3FD87382664}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6C89CDE1-FAF3-457D-A3ED-C3FD87382664}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6C89CDE1-FAF3-457D-A3ED-C3FD87382664}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6C89CDE1-FAF3-457D-A3ED-C3FD87382664}.Release|Any CPU.Build.0 = Release|Any CPU
+		{12AF5107-5FFE-4BEA-8418-367C2276197F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{12AF5107-5FFE-4BEA-8418-367C2276197F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{12AF5107-5FFE-4BEA-8418-367C2276197F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{12AF5107-5FFE-4BEA-8418-367C2276197F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{EB6F733B-A9FC-4A36-A127-EFA7CF26A48F} = {1F9403E8-D545-46A5-B23C-71D6AF0CF652}
+		{83F16175-43B1-4C90-A1EE-8E351C33435D} = {8E6D5255-776D-4B61-85F9-73C37AA1FB9A}
+		{8E6D5255-776D-4B61-85F9-73C37AA1FB9A} = {A6A6AF7D-D6E3-442D-9B1E-58CC91879BE1}
+		{57F64E13-05F2-4172-98E3-4E554EAAB2A0} = {ED8079DD-2B06-4030-9F0F-DC548F98E1C4}
+		{EF3125D9-12FF-4B32-B743-32C5893C91F4} = {1A89EE18-9B68-4E68-B4A8-B10180A6D1EB}
+		{783ACD3A-486E-42D2-92A0-59D59854DE98} = {503CD212-FC5B-44BA-85B8-466FCBC382F2}
+		{B2B1BDFA-3AC9-4A81-914E-0FDBDD9C7141} = {ED8079DD-2B06-4030-9F0F-DC548F98E1C4}
+		{B79F013E-FC02-4BE5-BEE4-F6465A4346D7} = {ED8079DD-2B06-4030-9F0F-DC548F98E1C4}
+		{1F9403E8-D545-46A5-B23C-71D6AF0CF652} = {FF444E87-2BB2-4301-9CEA-089BADD078D4}
+		{1A89EE18-9B68-4E68-B4A8-B10180A6D1EB} = {FF444E87-2BB2-4301-9CEA-089BADD078D4}
+		{503CD212-FC5B-44BA-85B8-466FCBC382F2} = {FF444E87-2BB2-4301-9CEA-089BADD078D4}
+		{B39432BA-A3EA-4271-B2E4-1D0CAE43BCC4} = {1F9403E8-D545-46A5-B23C-71D6AF0CF652}
+		{184DE8A1-FECC-4176-B617-DE3AD3D7D128} = {B39432BA-A3EA-4271-B2E4-1D0CAE43BCC4}
+		{7E3EA553-9CC3-4AE5-93D4-1F3ED2C2FE68} = {B39432BA-A3EA-4271-B2E4-1D0CAE43BCC4}
+		{6C89CDE1-FAF3-457D-A3ED-C3FD87382664} = {1F9403E8-D545-46A5-B23C-71D6AF0CF652}
+		{12AF5107-5FFE-4BEA-8418-367C2276197F} = {1F9403E8-D545-46A5-B23C-71D6AF0CF652}
+		{90F0666D-BA7D-42A3-B585-BCDF0AF21E00} = {1A89EE18-9B68-4E68-B4A8-B10180A6D1EB}
+		{9F962604-F7B4-49A9-A754-2CE2DB0A3CBC} = {503CD212-FC5B-44BA-85B8-466FCBC382F2}
+	EndGlobalSection
+EndGlobal

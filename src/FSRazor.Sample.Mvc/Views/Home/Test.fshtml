@@ -1,8 +1,0 @@
-﻿<h2>@("FS" + "Razor")</h2>
-<p>@(
-    let even_odd s =
-        match s % 2 with
-        | 0 -> sprintf "%i is even!" s
-        | _ -> sprintf "%i is odd!" s
-    DateTime.Now.Second |> even_odd
-    )</p>
